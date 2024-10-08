@@ -2,7 +2,7 @@ let pantallaqueestoy = 0;
 const totaldepantallas = 25;
 let img1;
 function preload() {
-  img1 = loadImage('data/narutopantalla1.jpeg'); // Cargar la imagen para la pantalla 1
+  img1 = loadImage('data/narutopantalla1.jpeg'); 
 }
 
 function setup() {
@@ -13,7 +13,7 @@ function draw() {
   background(150);
   drawScreen(); 
   drawButton(); 
-  mostrarPantallaConCursor(); // Mostrar el número de pantalla junto al cursor
+  mostrarPantallaConCursor(); 
 }
 
 function drawScreen() {
@@ -24,6 +24,6 @@ function drawScreen() {
 
 function mousePressed() {
   if (mouseX > width - 120 && mouseX < width - 20 && mouseY > height - 60 && mouseY < height - 20) {
-    pantallaqueestoy = (pantallaqueestoy + 1) % totaldepantallas; // Avanzar a la siguiente pantalla
+    pantallaqueestoy = (pantallaqueestoy + 1) % totaldepantallas; 
   }
 }
